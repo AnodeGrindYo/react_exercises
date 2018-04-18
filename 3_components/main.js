@@ -6,15 +6,11 @@ var VacancySign = React.createClass({
         } else{
             text = 'No Vacancy';
         }
-        return (
-            <div>{text}</div>
-        );
+        return <div>{text}</div>;
     }
 });
 
 ReactDOM.render (
-    <div>
-        <VacancySign hasVacancy={false} />
-    </div>,
+        <VacancySign hasVacancy={false} />,
     document.getElementById('container')
 );
